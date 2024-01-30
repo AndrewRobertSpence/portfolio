@@ -314,8 +314,20 @@ hr {
   background-color: #dabea5;
 }
 
-.button-react {
+/* .button-react {
   width: 60px;
+  height: 24px;
+  font-size: 12px;
+  margin-top: 5px;
+  color: white;
+  background-color: rgb(26, 26, 26);
+  border: none;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+} */
+
+.button-see-my-work {
+  width: 100px;
   height: 24px;
   font-size: 12px;
   margin-top: 5px;
@@ -326,12 +338,16 @@ hr {
   cursor: pointer;
 }
 
-.button-react:hover,
+/* .button-react:hover,
 .button-scss:hover {
+  transform: scale(1.05);
+} */
+
+.button-see-my-work:hover {
   transform: scale(1.05);
 }
 
-.button-scss {
+/* .button-scss {
   width: 60px;
   height: 24px;
   font-size: 12px;
@@ -342,7 +358,7 @@ hr {
   border: none;
   transition: transform 0.3s ease;
   cursor: pointer;
-}
+} */
 
 .about-me-container {
   margin-top: 20px;
