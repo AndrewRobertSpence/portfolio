@@ -987,6 +987,12 @@ h3 {
   align-items: center;
   margin-top: 16px;
   position: absolute;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+#email-circle:hover {
+  transform: scale(1.05);
 }
 
 .title-phone {
