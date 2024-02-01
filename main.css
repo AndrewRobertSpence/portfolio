@@ -25,6 +25,7 @@
   margin-bottom: 50px;
   height: 1700px;
   margin-right: 70px;
+  padding-left: 20px;
 }
 
 .contents2 {
@@ -143,14 +144,9 @@ hr {
 }
 
 .container1 {
-  /* width: 1780px;
-  height: 600px; */
-
   background-color: var(--black);
   margin-top: 10px;
-  /* margin-right: 70px; */
   display: flex;
-  /* flex-wrap: wrap; */
   flex-direction: row;
   margin-bottom: 70px;
 }
@@ -226,9 +222,12 @@ hr {
   margin-left: 15px;
   transition: transform 0.3s ease;
   cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-#work-circle {
+.work-circle {
   width: 60px;
   height: 60px;
   border-radius: 50%;
@@ -239,6 +238,9 @@ hr {
   margin-left: 15px;
   transition: transform 0.3s ease;
   cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 #first-circle {
@@ -254,7 +256,7 @@ hr {
   cursor: pointer;
 }
 
-#work-circle {
+.education-circle {
   width: 60px;
   height: 60px;
   border-radius: 50%;
@@ -265,24 +267,14 @@ hr {
   margin-left: 15px;
   transition: transform 0.3s ease;
   cursor: pointer;
-}
-
-#education-circle {
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
-  background-color: var(--grey);
-  text-align: center;
+  display: flex;
   align-items: center;
-  margin-top: 20px;
-  margin-left: 15px;
-  transition: transform 0.3s ease;
-  cursor: pointer;
+  justify-content: center;
 }
 
 .circle:hover,
-#work-circle:hover,
-#education-circle:hover {
+.work-circle:hover,
+.education-circle:hover {
   transform: scale(1.05);
 }
 
@@ -406,7 +398,17 @@ hr {
   body {
     margin-left: 25px;
   }
-   
+  main {
+    margin: 0 10px;
+  }
+  #face-pic {
+    height: 400px;
+    width: 400px;
+    margin-left: 15px;
+  }
+  .about-me-work-education {
+    margin-right: 0;
+  }
   .contents .contents1 .contents2 {
     margin-left: 10px;
     color: var(--white);
@@ -448,26 +450,20 @@ hr {
     display: flex;
     flex-direction: column;
     flex-grow: 1;
+    width: 120%;
   }
   .education-block {
     display: flex;
     flex-direction: column;
     flex-grow: 1;
-    width: 540px;
   }
   .about-me-work {
-    height: 870px;
-    width: 540px;
+    height: auto;
     background-color: var(--grey) important!;
-    margin-bottom: 20px;
-    margin-right: 20px;
   }
   .about-me-education {
-    height: 870px;
-    width: 540px;
+    height: auto;
     background-color: var(--grey) important!;
-    margin-bottom: 20px;
-    margin-right: 20px;
   }
   .blurb {
     width: 300px;
@@ -478,7 +474,7 @@ hr {
     line-height: 160%;
   }
   .blurb1 {
-    width: 300px;
+    width: 250px;
     font-family: "Roboto", sans-serif;
     font-weight: 300;
     font-size: 12px;
@@ -493,105 +489,88 @@ hr {
     margin-bottom: 60px;
   }
   #about-me-contents {
-    margin-left: 20px;
-    margin-right: 20px;
+    margin-left: 0;
     padding-left: 20px;
-    /* margin-top: 30px; */
-    margin-bottom: 30px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 50px;
     background-color: var(--grey);
-    height: 800px;
-    width: 540px;
-    padding-top: 40px;
+    height: auto;
+    padding-top: 20px;
     display: flex;
     flex-direction: column;
+    width: 105%;
   }
   #work-icon {
     display: flex;
     align-content: flex-end;
     margin-bottom: -10px !important;
-    width: 580px;
   }
   #work-icon1 {
     display: flex;
     align-content: flex-end;
     margin-bottom: -10px !important;
     margin-top: 50px;
-    width: 580px;
-  }
-  .title-work {
-    width: 320px;
-    /* margin-left: 20px; */
-  }
-  .title-education {
-    width: 320px;
-    /* margin-left: 20px; */
-  }
-  .divider-work-employment {
-    width: 100px;
-    height: 1px;
-    margin-top: 5px;
-  }
-  .divider-work-employment1 {
-    width: 100px;
-    height: 1px;
-    margin-top: 5px;
-    margin-left: 100px !important;
-  }
-  .divider-work-employment2 {
-    width: 100px;
-    height: 1px;
-    margin-top: 5px;
-    margin-left: 200px !important;
   }
   .work-circle,
   .education-circle {
-    width: 60px !important;
-    height: 60px;
+    width: 50px !important;
+    height: 50px !important;
     border-radius: 50%;
     background-color: var(--grey);
     text-align: center;
     align-items: center;
-    margin-top: 30px;
+    margin-top: 35px;
     margin-left: auto;
     margin-right: auto;
     position: absolute;
   }
+  .work {
+    width: 20px;
+    height: 18px;
+  }
+  .education {
+    width: 20px;
+    height: 18px;
+  }
+
   .about-me-work,
   .about-me-education {
-    height: 800px;
-    width: 520px;
+    height: Auto;
     background-color: var(--black) !important;
-    margin-bottom: 20px;
-    margin-right: 20px;
-  }
-  .title-work1 {
-    margin-left: 120px;
-    font-size: 42px;
-    font-weight: 700;
-    font-family: "Cormorant Garamond", serif;
-  }
-  .title-education1 {
-    margin-left: 120px;
-    font-size: 42px;
-    font-weight: 700;
-    font-family: "Cormorant Garamond", serif;
   }
 }
 
 @media screen and (max-width: 1440px) {
   .about-me-container1 {
-    margin-top: 60px;
-    margin-left: 70px;
+    margin-top: 20px;
+    margin-left: 0px;
     margin-bottom: 60px;
+  }
+  .about-me {
+    margin-left: -100px;
   }
   #about-me-work-education {
     display: flex;
     flex-direction: column;
   }
-  #face-pic {
-    height: 400px;
-    margin-left: 40px;
-    margin-top: 70px;
+  #about-me-contents {
+    margin-left: 0;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 50px;
+    background-color: var(--grey);
+    height: auto;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  .face-pic {
+    height: auto;
+    margin: 50px;
+    padding-right: 50px;
+    margin-top: 20px;
   }
   #navbar-container-options {
     margin-right: 20px;
@@ -605,15 +584,12 @@ hr {
     justify-content: space-between;
   }
   #container1 {
-    /* width: 1780px;
-    height: 600px; */
     flex-grow: 1;
     background-color: var(--black);
     margin-top: 10px;
     margin-right: 70px;
     display: flex;
     flex-wrap: wrap;
-    /* flex-direction: column; */
     margin-bottom: 50px;
   }
   #contents {
@@ -627,26 +603,16 @@ hr {
   .contents2 {
     margin-left: 40px;
     justify-content: center;
-    align-items: center
+    align-items: center;
   }
   .contents1 {
     margin-left: 40px;
     justify-content: center;
-    align-items: center
+    align-items: center;
   }
   #contact-phone-email {
     display: flex;
     flex-direction: column;
-  }
-  .work-circle {
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    background-color: var(--grey);
-    text-align: center;
-    align-items: center;
-    margin-top: 30px;
-    margin-left: 15px;
   }
   .education-circle {
     width: 60px;
@@ -656,7 +622,6 @@ hr {
     text-align: center;
     align-items: center;
     margin-top: 30px;
-    margin-left: 15px;
   }
   .images-website {
     height: 200px !important;
@@ -678,7 +643,6 @@ hr {
     font-size: 16px !important;
     margin-top: -30px;
   }
-
   .blurb-project {
     font-family: "Roboto", sans-serif;
     font-weight: 300;
@@ -692,7 +656,6 @@ hr {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    /* width: 1760px !important; */
     margin-top: 50px;
   }
   .images-web-snippets {
@@ -712,16 +675,11 @@ hr {
     width: 328px !important;
   }
   .container1 {
-    /* width: 1780px;
-    height: 600px; */
     flex-grow: 1;
     background-color: var(--black);
     margin-top: 10px;
-    /* margin-right: 70px; */
     display: flex;
     flex-wrap: wrap;
-    /* flex-direction: row; */
-    /* margin-bottom: 70px; */
   }
   .container2 {
     margin-right: 20px;
@@ -770,8 +728,24 @@ hr {
     margin-right: 70px;
     height: 850px !important;
   }
+  .blurb1 {
+    width: 350px;
+  }
+  .title-work1 {
+    padding-top: 25px;
+    padding-left: 70px;
+    font-size: 25px;
+    font-weight: 700;
+    font-family: "Cormorant Garamond", serif;
+  }
+  .title-education1 {
+    padding-top: 25px;
+    padding-left: 70px;
+    font-size: 25px;
+    font-weight: 700;
+    font-family: "Cormorant Garamond", serif;
+  }
 }
-
 .face-pic {
   height: 500px;
   margin-left: 150px;
@@ -785,11 +759,9 @@ hr {
 
 .about-me-work-education {
   display: flex;
-  flex-direction: row;
+  flex-wrap: wrap;
   background-color: var(--black);
-  height: 870px;
-  width: 1780px;
-  /* flex-grow: 1; */
+  height: auto;
 }
 
 #button-resume {
@@ -806,16 +778,12 @@ hr {
   transform: scale(1.05);
 }
 .about-me-work {
-  height: 870px;
-  width: 800px;
   background-color: var(--grey);
-  margin-bottom: 20px;
   margin-right: 20px;
 }
 
 .about-me-education {
-  height: 870px;
-  width: 800px;
+  height: auto;
   background-color: var(--grey);
   margin-bottom: 20px;
   margin-right: 20px;
@@ -826,42 +794,48 @@ hr {
   flex-direction: row;
   background-color: var(--black);
   height: 120px;
-  width: 1780px;
+  width: auto;
   margin-top: 80px;
 }
 
 .title-work {
   height: 100px;
-  width: 725px;
   background-color: var(--black);
   display: flex;
   flex-direction: row;
+  width: auto;
+  align-items: center;
 }
 
 .title-education {
   height: 100px;
-  width: 725px;
+  width: auto;
   background-color: var(--black);
   display: flex;
   flex-direction: row;
+  align-items: center;
 }
 
 .title-work1 {
   font-size: 42px;
   font-weight: 700;
+  padding-left: 60px;
+  padding-top: 15px;
   font-family: "Cormorant Garamond", serif;
 }
 
 .title-education1 {
   font-size: 42px;
   font-weight: 700;
+  padding-left: 60px;
+  padding-top: 15px;
   font-family: "Cormorant Garamond", serif;
 }
 
 .arrow1 {
   width: 40px;
   height: 30px;
-  padding-top: 46px;
+  padding-top: 18px;
   padding-left: 10px;
 }
 
@@ -869,14 +843,14 @@ hr {
   width: 22px;
   height: 20px;
   color: var(--white);
-  margin-top: 20px;
-  flex-grow: 1;
+  flex-grow: 0;
 }
 
 .education {
-  margin-top: 10px;
-  width: 40px;
-  flex-grow: 1;
+  width: 32px;
+  height: 30px;
+  color: var(--white);
+  flex-grow: 0;
 }
 
 #work-icon {
@@ -893,12 +867,12 @@ hr {
 
 .about-me-contents {
   margin-left: 20px;
-  margin-right: 20px;
   margin-top: 30px;
   margin-bottom: 30px;
   background-color: var(--grey);
-  height: 800px;
+  height: auto;
   padding-top: 40px;
+  padding-bottom: 20px;
 }
 
 .divider-work-employment {
@@ -911,14 +885,12 @@ hr {
   width: 100px;
   height: 1px;
   margin-top: 5px;
-  margin-left: 250px;
 }
 
 .divider-work-employment2 {
   width: 100px;
   height: 1px;
   margin-top: 5px;
-  margin-left: 500px;
 }
 
 h4 {
@@ -943,15 +915,14 @@ h3 {
 }
 
 .employment {
-  display: flex;
-  flex-direction: column;
-  flex-grow: 1;
+  flex: 50%;
+  width: 100%;
 }
 
 .education-block {
-  display: flex;
-  flex-direction: column;
-  flex-grow: 1;
+  flex: 50%;
+  height: auto;
+  width: 100%;
 }
 
 #title-contact {
@@ -1056,7 +1027,7 @@ h3 {
   margin-top: 140px;
   display: flex;
   flex-direction: row;
- }
+}
 
 #linkedin1 {
   font-size: 3em;
@@ -1215,4 +1186,55 @@ h3 {
 
 .hover-bg:hover .hover-text {
   opacity: 1;
+}
+
+@media screen and (max-width: 768px) {
+  .title-work1 {
+    padding-top: 25px;
+    padding-left: 70px;
+    font-size: 25px;
+    font-weight: 700;
+    font-family: "Cormorant Garamond", serif;
+  }
+  .title-education1 {
+    padding-top: 25px;
+    padding-left: 70px;
+    font-size: 25px;
+    font-weight: 700;
+    font-family: "Cormorant Garamond", serif;
+  }
+  .divider-work-employment {
+    width: 100px;
+    height: 1px;
+    margin-top: 5px;
+  }
+  .divider-work-employment1 {
+    width: 100px;
+    height: 1px;
+    margin-top: 5px;
+    }
+  .divider-work-employment2 {
+    width: 100px;
+    height: 1px;
+    margin-top: 5px;
+   }
+  .arrow1 {
+    width: 0;
+    height: 0;
+  }
+  #face-pic {
+    height: 200px;
+    width: 200px;
+    margin-left: 15px;
+  }
+  .blurb1 {
+    width: 250px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 160%;
+  }
+  .about-me {
+    margin-left: 0px;
+  }
 }
